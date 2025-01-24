@@ -1,0 +1,20 @@
+﻿@model IEnumerable<LebronJames_PROJECT_2.Models.Comment>
+
+<h2>Коментари на потребителя</h2>
+
+@if (!Model.Any())
+{
+    <p>Няма намерени коментари за този потребител.</p>
+}
+else
+{
+    <ul>
+        @foreach (var comment in Model)
+        {
+            <li>
+                <strong>@comment.Username:</strong> @comment.Content <br />
+                <small>Дата: @comment.CreatedAt</small>
+            </li>
+        }
+    </ul>
+}

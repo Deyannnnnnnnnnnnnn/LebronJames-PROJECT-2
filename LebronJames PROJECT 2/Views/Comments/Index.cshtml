@@ -1,0 +1,26 @@
+﻿@model List<Comment>
+
+<h1>Коментари</h1>
+
+<form asp-action="AddComment" method="post">
+    <div class="mb-3">
+        <label for="username" class="form-label">Потребителско име</label>
+        <input type="text" name="username" class="form-control" id="username" required />
+    </div>
+    <div class="mb-3">
+        <label for="content" class="form-label">Коментар</label>
+        <textarea name="content" class="form-control" id="content" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Добави коментар</button>
+</form>
+
+<h2>Последни коментари:</h2>
+<ul class="list-group">
+    @foreach (var comment in Model)
+    {
+        <li class="list-group-item">
+            <strong>@comment.Username</strong>: @comment.Content <br />
+            <small class="text-muted">@comment.CreatedAt</small>
+        </li>
+    }
+</ul>

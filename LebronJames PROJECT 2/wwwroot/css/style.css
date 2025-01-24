@@ -1,0 +1,133 @@
+﻿/* Общи стилове */
+body {
+    font-family: Arial, sans-serif; /* Основен шрифт за текста */
+    margin: 0; /* Премахване на стандартните отстояния */
+    padding: 0; /* Премахване на вътрешното отстояние */
+    background-color: #f5f5f5; /* Светъл фон */
+    color: #333; /* Основен цвят на текста */
+}
+
+/* Заглавна част (header) */
+header {
+    background-color: #552583; /* Лилав цвят (Lakers) */
+    color: #FDB927; /* Златен цвят (Lakers) */
+    text-align: center; /* Центриране на съдържанието */
+    padding: 20px 0; /* Добавяне на вътрешно отстояние */
+}
+
+/* Навигационна лента */
+.navbar {
+    background-color: #552583; /* Лилав фон за навигацията */
+}
+
+    .navbar .nav-link {
+        color: #FDB927 !important; /* Златен цвят за линковете */
+        font-weight: bold; /* Удебелен текст */
+        text-transform: uppercase; /* Главни букви за линковете */
+        transition: color 0.3s ease, background-color 0.3s ease; /* Плавни анимации */
+    }
+
+        .navbar .nav-link:hover {
+            background-color: #FDB927; /* Златен фон при задържане */
+            color: #552583 !important; /* Лилав текст при задържане */
+            border-radius: 5px; /* Заоблени ръбове */
+        }
+
+.navbar-brand {
+    color: #FDB927 !important; /* Златен цвят за името */
+    font-size: 1.5rem; /* Увеличен шрифт */
+    font-weight: bold;
+}
+
+    .navbar-brand:hover {
+        color: white !important; /* Бял цвят при задържане */
+    }
+
+/* Footer стилове */
+footer {
+    background-color: #552583; /* Същият лилав цвят като header */
+    color: #FDB927; /* Същият златен цвят като header */
+    text-align: center; /* Центриране на текста */
+    padding: 20px 0; /* Увеличено вътрешно отстояние */
+    font-size: 14px; /* По-голям текст за четимост */
+    margin-top: 20px; /* Разстояние между footer-а и съдържанието над него */
+}
+
+/* Стилове за изображението на началната страница */
+.homepage-image {
+    max-width: 200px; /* Ограничаване на размера на изображението */
+    height: auto; /* Запазване на пропорциите */
+    margin: 20px auto; /* Центриране на изображението */
+    border-radius: 20px; /* Заоблени ръбове */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Лека сянка */
+    display: block;
+}
+
+/* Галерия */
+.gallery {
+    display: grid; /* Подрежда снимките в мрежа */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивни колони */
+    gap: 15px; /* Разстояние между снимките */
+    padding: 20px;
+}
+
+    .gallery img {
+        width: 100%; /* Изображенията запълват колоната */
+        height: auto; /* Запазване на пропорциите */
+        border-radius: 10px; /* Заоблени ръбове */
+        transition: transform 0.3s ease; /* Анимация за плавно уголемяване */
+    }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Увеличение при задържане на мишката */
+        }
+
+/* Текстови стилове */
+h2 {
+    font-size: 24px; /* Размер на заглавията */
+    color: #333;
+    text-align: center;
+}
+
+p {
+    font-size: 16px; /* Размер на текста в параграфите */
+    line-height: 1.5; /* Разстояние между редовете */
+    margin: 20px 0;
+    text-align: center; /* Центриране на текста */
+}
+
+/* Медийни заявки за мобилни устройства */
+@media (max-width: 768px) {
+    /* Навигация на мобилни устройства */
+    .navbar .nav-link {
+        font-size: 14px; /* По-малки линкове */
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem; /* Намален текст за името */
+    }
+
+    /* Галерия на мобилни устройства */
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* По-малки колони */
+        gap: 10px; /* Намалено разстояние между изображенията */
+    }
+
+    /* Изображение на началната страница за мобилни */
+    .homepage-image {
+        max-width: 150px; /* Намален размер на изображението */
+    }
+
+    /* Текстови стилове за мобилни устройства */
+    h2 {
+        font-size: 20px; /* По-малки заглавия */
+    }
+
+    p {
+        font-size: 14px; /* По-малки параграфи */
+    }
+
+    footer {
+        font-size: 12px; /* Намален текст за мобилни устройства */
+    }
+}

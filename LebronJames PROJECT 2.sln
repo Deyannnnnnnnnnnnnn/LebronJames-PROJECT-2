@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LebronJames PROJECT 2", "LebronJames PROJECT 2\LebronJames PROJECT 2.csproj", "{BC405ED7-3619-4D98-97B2-66A272577F1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC405ED7-3619-4D98-97B2-66A272577F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC405ED7-3619-4D98-97B2-66A272577F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC405ED7-3619-4D98-97B2-66A272577F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC405ED7-3619-4D98-97B2-66A272577F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AAAEA34-9B52-4816-AD4F-94F217D29F2A}
+	EndGlobalSection
+EndGlobal
